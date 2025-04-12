@@ -97,7 +97,7 @@ public class ProcessService {
         WritableImage result = new WritableImage(width, height);
         PixelWriter writer = result.getPixelWriter();
 
-        int blurRadius = 2;
+        int blurRadius = 3;
         for (int y = blurRadius; y < height - blurRadius; y++) {
             for (int x = blurRadius; x < width - blurRadius; x++) {
                 double redSum = 0, greenSum = 0, blueSum = 0;
